@@ -62,6 +62,12 @@ const LevelOne = () => {
                             <div className={styles.svg}>
                                 <img src={pauseButton} alt="Pause" onClick={handleClick} />
                             </div>
+                            <div id='pause-panel' class="hidden">
+                                <h2>Paused</h2>
+                                <button id='resume-btn'>Resume</button>
+                                <button id='settings-btn'>Settings</button>
+                                <button id='quit-btn'>Quit game</button>
+                            </div>
                             <p className={styles.gameText}>Player 1</p>
                         </div>
                         <div className={styles.miniContainer2}>

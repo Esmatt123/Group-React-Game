@@ -1,30 +1,30 @@
 import TutorialScreen from "../tutorialScreen/tutorialScreen"
 
-const PauseScreen = () => {
-    return (
-       
-        <div className="pause-container">
-            <h2>Paused</h2>
-            <button onClick={ResumeGame}>Resume</button>
-            <button onClick={TutorialScreen}>Rules</button>
-            <button onClick={}>Quit game</button>
-        </div>
-    
-    )
+const pauseBtn = document.getElementById("pause-btn");
+const pausePanel = document.getElementById("pause-panel");
+const resumeBtn = document.getElementById("resume-btn");
+const settingsBtn = document.getElementById("settings-btn");
+const quitBtn = document.getElementById("quit-btn");
+
+pauseBtn.addEventListener("click", () => {
+    pauseGame();
+});
+
+resumeBtn.addEventListener("click", () => {
+    resumeGame();
+});
+
+// function to pause the game
+function pauseGame() {
+    pausePanel.classList.remove("hidden");
+
 }
 
-function Start () {
-    PauseScreen.SetActive(false);
+// function to resume the game
+function resumeGame() {
+    pausePanel.classList.add("hidden")
 }
 
-const PauseGame () {
-    PauseMenu.SetActive(true);
-    <Time className="timscale"></Time>
-    
-}
 
-const ResumeGame () {
-    PauseMenu.SetActive(false);
-}
 
 export default PauseScreen
