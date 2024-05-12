@@ -62,7 +62,7 @@ const LevelOne = () => {
                             <div className={styles.svg}>
                                 <img src={pauseButton} alt="Pause" onClick={handleClick} />
                             </div>
-                            <div id='pause-panel' class="hidden">
+                            <div id='pause-panel' className="hidden">
                                 <h2>Paused</h2>
                                 <button id='resume-btn'>Resume</button>
                                 <button id='settings-btn'>Settings</button>
