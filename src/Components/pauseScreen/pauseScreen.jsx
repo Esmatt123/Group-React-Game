@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './pauseScreen.css';
+import '../pauseScreen.css';
 // main component
 function App () {
     const [showPausePanel, setShowPausePanel] = useState(false)
@@ -27,10 +27,15 @@ function App () {
     return (
         <div className="App">
             <div id="pause-container">
-                src=
+                <img
+                src="pause-icon.svg"
+                alt="Pause"
+                className="pause-btn"
+                onClick={handlePauseClick}
+                />
             </div>
 
-        {setShowPausePanel && (
+        {setShowPausePanel (
             <div id="pause-panel" className="pause-panel">
                 <h2>Paused</h2>
                 <button onClick="handleResumeClick">Resume</button>
