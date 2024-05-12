@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../pauseScreen.css';
+
+const pauseWindow = () => {
+
 // main component
-function Paused () {
+
     const [showPausePanel, setShowPausePanel] = useState(false)
 
     // function to handle click event on the pause button
@@ -24,27 +27,15 @@ function Paused () {
         // add logic here to return to start screen
     };
 
+
     return (
-        <div className="Paused">
-            <div id="pause-container">
-                <img
-                src="pause-icon.svg"
-                alt="Pause"
-                className="pause-btn"
-                onClick={handlePauseClick}
-                />
-            </div>
+        <div id='pause-panel' className="hidden">
+        <h2>Paused</h2>
+        <button id='resume-btn'>Resume</button>
+        <button id='settings-btn'>Settings</button>
+        <button id='quit-btn'>Quit game</button>
+      </div>
+      )
+    }
 
-        {setShowPausePanel (
-            <div id="pause-panel" className="pause-panel">
-                <h2>Paused</h2>
-                <button onClick="handleResumeClick">Resume</button>
-                <button onClick="handleSettingsClick">Settings</button>
-                <button onClick="handleQuitClick">Quit game</button>
-            </div>
-        )}
-        </div>
-    );
-}
-
-export default App;
+export default pauseButton

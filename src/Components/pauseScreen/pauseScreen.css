@@ -1,5 +1,9 @@
 .hidden {
-    display: none;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }
 
 #pause-panel {

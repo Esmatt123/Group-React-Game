@@ -9,8 +9,8 @@ const TutorialScreen = () => {
         It's getting harder with time. Do NOT whack the bombs.</p>
         </div>
         <div className="tutorial-icons">
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src="../src/assets/icons/Bomb-rules.svg" alt="Bomb" />
+            <img src="../src/assets/icons/equal-icon-rules.svg" alt="icon" />
             <img src="" alt="" />
         </div>
         <div className="tutorial-text-second">

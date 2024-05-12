@@ -6,7 +6,7 @@ import LevelOne from './Components/LevelOne/LevelOne';
 import Root from './Components/root';
 import SoundButton from './Components/soundButton/soundButton';
 import startMusic from '../public/music/startbackmusic.mp3';
-import tutorialScreen from './Components/tutorialScreen/tutorialScreen';
+import TutorialScreen from './Components/tutorialScreen/tutorialScreen';
 
 function App() {
   return (	
@@ -15,7 +15,7 @@ function App() {
 			<Routes>
 				<Route path='/levelone' element={<LevelOne />} />
 				<Route path='/' element={<Root />} />
-				<Route path='/tutorial' element={<tutorialScreen />} />
+				<Route path='/tutorial' element={<TutorialScreen />} />
 			</Routes>
 				<SoundButton startMusic={startMusic}></SoundButton>
 
