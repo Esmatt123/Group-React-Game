@@ -1,25 +1,45 @@
-const pauseBtn = document.getElementById("pause-btn");
-const pausePanel = document.getElementById("pause-panel");
-const resumeBtn = document.getElementById("resume-btn");
-const settingsBtn = document.getElementById("settings-btn");
-const quitBtn = document.getElementById("quit-btn");
+import React, { useState } from 'react';
+import './pauseScreen.css';
+// main component
+function App () {
+    const [showPausePanel, setShowPausePanel] = useState(false)
 
-pauseBtn.addEventListener("click", () => {
-    pauseGame();
-});
+    // function to handle click event on the pause button
+    const handlePauseClick = () => {
+        setShowPausePanel(true);
+    };
 
-resumeBtn.addEventListener("click", () => {
-    resumeGame();
-});
+    //function to handle click event on the resume button
+    const handleResumeClick = () => {
+        setShowPausePanel(false);
+    };
 
-// function to pause the game
-function pauseGame() {
-    pausePanel.classList.remove("hidden");
+    //function to handle click event on the settings button
+    const handleSettingsClick = () => {
+        // add settings logic here
+    };
+    
+    // function to handle the click event on the quit button
+    const handleQuitClick = () => {
+        // add logic here to return to start screen
+    };
 
+    return (
+        <div className="App">
+            <div id="pause-container">
+                src=
+            </div>
+
+        {setShowPausePanel && (
+            <div id="pause-panel" className="pause-panel">
+                <h2>Paused</h2>
+                <button onClick="handleResumeClick">Resume</button>
+                <button onClick="handleSettingsClick">Settings</button>
+                <button onClick="handleQuitClick">Quit game</button>
+            </div>
+        )}
+        </div>
+    );
 }
 
-// function to resume the game
-function resumeGame() {
-    pausePanel.classList.add("hidden")
-}
-
+export default App;
