@@ -1,5 +1,3 @@
-import TutorialScreen from "../tutorialScreen/tutorialScreen"
-
 const pauseBtn = document.getElementById("pause-btn");
 const pausePanel = document.getElementById("pause-panel");
 const resumeBtn = document.getElementById("resume-btn");
@@ -25,6 +23,3 @@ function resumeGame() {
     pausePanel.classList.add("hidden")
 }
 
-
-
-export default PauseScreen
