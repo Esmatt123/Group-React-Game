@@ -262,3 +262,11 @@ html {
             transform: scale(1.5);
   }
 }
+
+.hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}

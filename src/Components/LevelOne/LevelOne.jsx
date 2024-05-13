@@ -10,7 +10,8 @@ import explosionSound from '../../../public/music/bomb-explosion.mp3'
 import GameOverPage from '../gameOver/gameOverPage';
 import ExplosionSVG from '../../assets/images/explosion-boom.svg'; // Import the explosion SVG
 import MainButton from '../mainButton/mainButton'
-import TimerComponent from '../Timer/timerComponent';
+import Paused from '../pauseScreen/Paused';
+// import TimerComponent from '../Timer/timerComponent';
 
 const LevelOne = () => {
     const [score, setScore] = useState(0);
@@ -123,14 +124,16 @@ const LevelOne = () => {
                             </>
                         )
                     }
-                    <div className={`${styles.center} ${paused ? styles.visible : styles.hidden}`} onClick={continueGame}>
-                        <MainButton name="Play" />
+
+                    <div className={`${styles.center} ${paused ? styles.visible : styles.hidden}`}>
+							{/* need to finish  maybe to add callback for resume, settings and exit*/}
+							 <Paused onClick={continueGame} />
                     </div>
-                    <TimerComponent isRunning={isRunning} countdownTime={countdownTime}/>
+                    {/* <TimerComponent isRunning={isRunning} countdownTime={countdownTime}/>  */}
+
                 </div>
             )}
             <Hammer />
-
         </>
     );
 }
