@@ -35,16 +35,16 @@ function Paused () {
                 />
             </div>
 
-        {setShowPausePanel (
+        {setShowPausePanel && (
             <div id="pause-panel" className="pause-panel">
                 <h2>Paused</h2>
-                <button onClick="handleResumeClick">Resume</button>
-                <button onClick="handleSettingsClick">Settings</button>
-                <button onClick="handleQuitClick">Quit game</button>
+                <button onClick={handleResumeClick}>Resume</button>
+                <button onClick={handleSettingsClick}>Settings</button>
+                <button onClick={handleQuitClick}>Quit game</button>
             </div>
         )}
         </div>
     );
 }
 
-export default App;
+export default Paused

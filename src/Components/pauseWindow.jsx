@@ -31,9 +31,9 @@ const pauseWindow = () => {
     return (
         <div id='pause-panel' className="hidden">
         <h2>Paused</h2>
-        <button id='resume-btn'>Resume</button>
-        <button id='settings-btn'>Settings</button>
-        <button id='quit-btn'>Quit game</button>
+        <button onClick={handleResumeClick} id='resume-btn'>Resume</button>
+        <button onClick={handleSettingsClick} id='settings-btn'>Settings</button>
+        <button onClick={handleQuitClick} id='quit-btn'>Quit game</button>
       </div>
       )
     }
