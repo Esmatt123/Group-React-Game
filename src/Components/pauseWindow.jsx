@@ -38,4 +38,4 @@ const pauseWindow = () => {
       )
     }
 
-export default pauseButton
+export default pauseWindow
