@@ -9,3 +9,8 @@
     opacity: 0px;
  
 }
+
+#Alien {
+    display: flex;
+    width: 253px;
+}

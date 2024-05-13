@@ -10,8 +10,8 @@ const TutorialScreen = () => {
         </div>
         <div className="tutorial-icons">
             <img src="../src/assets/icons/Bomb-rules.svg" alt="Bomb" />
-            <img src="../src/assets/icons/equal-icon-rules.svg" alt="icon" />
-            <img src="" alt="" />
+            <img src="../src/assets/icons/equal-icon-rules.svg" alt="Icon" />
+            <img src="../src/assets/icons/No-heart-rules.svg" alt="Xheart" />
         </div>
         <div className="tutorial-text-second">
             <p>Do NOT whack the bombs
@@ -19,7 +19,10 @@ const TutorialScreen = () => {
             Reach a 500 score to WIN!</p>
         </div>
         <div className="tutorial-alien">
-            <img src="" alt="" />
+            <img src="../src/assets/images/Sad-alien-rules.svg" alt="Alien" />
+        </div>
+        <div className="tutorial-play-btn">
+            <button type="button" class="btn">Start game</button>
         </div>
        </div>     
     )};
