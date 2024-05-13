@@ -5,6 +5,7 @@ const TutorialScreen = () => {
        <div className="container-tutorial">
         <div className="tutorial-header">
         <h2>Aliens attacked the moon!</h2>
+        <img src="../src/assets/icons/Exit-cross-rules.svg" alt="Exit cross" />
         </div>
         <div className="tutorial-text-first">
             <p>Whack the aliens with the hammer and earn points.
@@ -22,9 +23,6 @@ const TutorialScreen = () => {
         </div>
         <div className="tutorial-alien">
             <img src="../src/assets/images/Sad-alien-rules.svg" alt="Alien" />
-        </div>
-        <div className="tutorial-play-btn">
-            <button type="button" class="btn">Start game</button>
         </div>
        </div>     
     )};
