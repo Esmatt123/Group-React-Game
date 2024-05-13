@@ -124,15 +124,16 @@ const LevelOne = () => {
                             </>
                         )
                     }
+
                     <div className={`${styles.center} ${paused ? styles.visible : styles.hidden}`}>
-							{/* need to finish */}
+							{/* need to finish  maybe to add callback for resume, settings and exit*/}
 							 <Paused onClick={continueGame} />
                     </div>
                     {/* <TimerComponent isRunning={isRunning} countdownTime={countdownTime}/>  */}
+
                 </div>
             )}
             <Hammer />
-
         </>
     );
 }
