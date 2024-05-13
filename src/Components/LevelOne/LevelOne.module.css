@@ -1,3 +1,239 @@
-h1{
-    color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:wght@700&display=swap");
+.levelContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/images/Moon-play.png") center bottom no-repeat;
+  background-size: 1500px 800px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  cursor: none;
+  overflow: hidden;
+}
+.levelContainer .svg {
+  margin: 0;
+  padding: 0;
+}
+.levelContainer img {
+  margin: 0;
+  padding: 0;
+}
+.levelContainer .gameText {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.levelContainer .topContainer {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+}
+.levelContainer .miniContainer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+  padding: 10px;
+}
+.levelContainer .miniContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  padding: 10px;
+}
+.levelContainer .soundIcon {
+  padding: 15px;
+}
+
+html {
+  overflow: hidden;
+}
+
+.alien {
+  z-index: 2;
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
+
+.punched {
+  -webkit-filter: contrast(0.4);
+          filter: contrast(0.4);
+}
+
+.appear {
+  -webkit-animation: appear 0.4s linear;
+          animation: appear 0.4s linear;
+}
+
+.disappear {
+  -webkit-animation: disappear 0.2s linear forwards;
+          animation: disappear 0.2s linear forwards;
+}
+
+.a1 {
+  bottom: 443px;
+  left: 44.5%;
+}
+
+.a2 {
+  bottom: 326px;
+  left: 24%;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.a3 {
+  bottom: 319px;
+  left: 66%;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.a4 {
+  bottom: 131px;
+  left: 21%;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.a5 {
+  bottom: 131px;
+  left: 67.5%;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.a6 {
+  bottom: 263px;
+  left: 44.5%;
+}
+
+.a7 {
+  bottom: 75px;
+  left: 44.5%;
+}
+
+@-webkit-keyframes appear {
+  from {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes appear {
+  from {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+@-webkit-keyframes disappear {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+  to {
+    -webkit-transform: translateY(190px);
+            transform: translateY(190px);
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+}
+@keyframes disappear {
+  from {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+  to {
+    -webkit-transform: translateY(190px);
+            transform: translateY(190px);
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+}
+.explosion {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  margin: auto 0;
+  position: absolute;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes explode {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes explode {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
