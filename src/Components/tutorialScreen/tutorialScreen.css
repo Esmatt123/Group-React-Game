@@ -1,16 +1,40 @@
 .container-tutorial {
-    display: flex;
-    width: 1260px;
-    height: 745px;
-    top: 113.02px;
-    left: 109.63px;
-    gap: 0px;
-    border-radius: 50px 0px 0px 0px;
-    opacity: 0px;
+    margin-bottom: 100px;
+    background-color: #E9E7E7;
+    display: block;
+    width: 1060px;
+    height: 545px;
+    border-radius: 50px 50px 0px 0px;
+    
  
 }
 
-#Alien {
-    display: flex;
-    width: 253px;
+.tutorial-text-first, .tutorial-text-second {
+    color: #000000;
+    
+}
+
+.p, h2 {
+    font-family: "Montserrat";
+    font-size: 50px;
+}
+
+.tutorial-header {
+    font-family: "Montserrat";
+    color: #92B400;
+}
+
+.tutorial-alien img {
+    width: 180px;
+    height: 360px;
+}
+
+.btn {
+    font-family: "Montserrat";
+    border-radius: 50px;
+    font-size: 47px;
+    font-weight: 500;
+    text-align: center;
+    color: #8d2984;
+    padding: 30px;
 }

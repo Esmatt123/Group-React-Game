@@ -1,3 +1,5 @@
+import './tutorialScreen.css'
+
 const TutorialScreen = () => {
     return (
        <div className="container-tutorial">
