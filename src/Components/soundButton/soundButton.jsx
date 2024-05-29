@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
-import soundOn from '../../assets/icons/Sound-ON-icon.svg'
-import soundOff from '../../assets/icons/Sound-OFF-icon.svg'
+import soundOn from '../../../public/assets/icons/Sound-ON-icon.svg'
+import soundOff from '../../../public/assets/icons/Sound-OFF-icon.svg'
 
 // eslint-disable-next-line react/prop-types
 const SoundButton = ({ startMusic }) => {

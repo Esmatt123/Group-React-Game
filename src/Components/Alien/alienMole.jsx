@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import styles from '../LevelOne/LevelOne.module.css';
-import alien from '../../assets/images/alien-play-game.svg';
-import bomb from '../../assets/images/Bomb-gameplay.svg';
+import alien from '../../../public/assets/images/alien-play-game.svg';
+import bomb from '../../../public/assets/images/Bomb-gameplay.svg';
 import React, { useState, useEffect, useCallback } from 'react';
 
 const AlienMole = ({ alienId, onAlienClick, onBombClick }) => {

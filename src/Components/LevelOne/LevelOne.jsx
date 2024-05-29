@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import styles from "./LevelOne.module.css";
-import pauseButton from "../../assets/icons/Pause-icon.svg";
-import heart from "../../assets/icons/Heart-game-red.svg";
-import grayHeart from "../../assets/icons/Heart-game-gray.svg";
+import pauseButton from "../../../public/assets/icons/Pause-icon.svg";
+import heart from "../../../public/assets/icons/Heart-game-red.svg";
+import grayHeart from "../../../public/assets/icons/Heart-game-gray.svg";
 import AlienMole from "../Alien/alienMole";
 import Hammer from "../hammer/hammer";
 import explosionSound from "../../../public/music/bomb-explosion.mp3";
-import ExplosionSVG from "../../assets/images/explosion-boom.svg";
+import ExplosionSVG from "../../../public/assets/images/explosion-boom.svg";
 import Timer from "../Timer/timerComponent";
 import LosingPage from "../LosingPage/LosingPage";
 import Paused from "../PauseScreen/pauseScreen";

@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const PauseWindow = () => {
 
 // main component
 
+    // eslint-disable-next-line no-unused-vars
     const [showPausePanel, setShowPausePanel] = useState(false)
 
    

@@ -1,4 +1,5 @@
-import logo from "../assets/images/FirstPageAlienLOGO.svg"
+import logo from "../../public/assets/images/FirstPageAlienLOGO.svg"
+
 import MainButton  from "./mainButton/mainButton"
 import UseLink from "./linksDelay/linksDelay";
 

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./winPage.module.css";
-import goBackMenu from "../../assets/icons/Go-back-menu.svg";
-import astronautWon from "../../assets/images/Austonaut-won.svg";
+import goBackMenu from "../../../public/assets/icons/Go-back-menu.svg";
+import astronautWon from "../../../public/assets/images/Austonaut-won.svg";
 import crowdCheer from "../../../public/music/crowd-cheer.mp3";
 
 export default function WinningPage() {

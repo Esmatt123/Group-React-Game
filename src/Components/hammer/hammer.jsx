@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import hammer from '../../assets/images/Hammer-game.svg';
+import hammer from '../../../public/assets/images/Hammer-game.svg';
 import hammercss from './hammer.module.css';
 import clickSound from '../../../public/music/hammer-whack.mp3';
 
